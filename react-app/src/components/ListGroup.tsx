@@ -9,19 +9,17 @@ function ListGroup() {
     "And a fifth one",
   ];
 
-  items = [];
+  //items = [];
+  const handleClick = (event: React.MouseEvent<HTMLLIElement>) => {console.log(event.currentTarget.textContent);};
 
-  if (items.length === 0) {
-    return <Message message="No items to display" />;
-  }
 
   return (
     <>
-      {items.length === 0 ? <Message message="No items to display" /> : null}
+      {items.length === 0 && <Message message="No items to display" />}
       <h1>List</h1>
       <ul className="list-group">
         {items.map((item) => (
-          <li key={item} className="list-group-item">
+          <li key={item} className="list-group-item" onClick={handleClick}>
             {item}
           </li>
         ))}

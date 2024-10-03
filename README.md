@@ -44,9 +44,9 @@ with the above code, you can use `<Message />` in other component
 
 ### UI
 
-https://getbootstrap.com/
 
-`bootstrap`
+
+[`bootstrap`](https://getbootstrap.com/)
 
 > npm i bootstrap
 
@@ -66,7 +66,7 @@ above code returning a jsx
 
 ### javascript in JAX
 
-use `{}` for javacript in JAX. But only for single line functions.
+use braces `{}` for javacript in JAX. But only for single line functions.
 
 ```typescript
 return (
@@ -83,3 +83,7 @@ return (
   </>
 );
 ```
+## Javascript Tips
+`true` && anything = anything
+
+`false` && antyhing = falase
