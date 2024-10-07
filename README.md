@@ -44,9 +44,7 @@ with the above code, you can use `<Message />` in other component
 
 ### UI
 
-https://getbootstrap.com/
-
-`bootstrap`
+[`bootstrap`](https://getbootstrap.com/)
 
 > npm i bootstrap
 
@@ -64,9 +62,12 @@ return <h1>Hello Word</h1>;
 
 above code returning a jsx
 
+`for` loop is not able to using in JSX. instead, use `items.map((item, index) => (...)` as `foreach` in JSX
+
 ### javascript in JAX
 
-use `{}` for javacript in JAX. But only for single line functions.
+use braces `{}` for javacript in JAX. But only for single line functions.
+`key` is required for the items that required to retrieved by js
 
 ```typescript
 return (
@@ -83,3 +84,8 @@ return (
   </>
 );
 ```
+
+## Javascript tips
+
+1. `true && anything` = anything
+2. `false && anything` = false = nothing to display
